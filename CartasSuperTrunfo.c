@@ -11,6 +11,8 @@ int main() {                                 // variaveis para a carta numero 1
     float area; //Area em km²              // Declarei float pois sao variaveis flutuantes
     float PIB; //Produto Interno Bruto
     
+    float DensidadePopulacional;         //variaveis do nivel aventureiros carta 1
+    float PerCapita;
 
                                                 // variaveis para a carta numero 2 sao as mesmas da carta 1, somente muda a identificação 2
     char estado2[60] ;//Nome do estado    
@@ -20,6 +22,9 @@ int main() {                                 // variaveis para a carta numero 1
     float area2; //Area em km²
     float PIB2; //Produto Interno Bruto
     int turisticos2;//Número de pontos turísticos
+
+    float DensidadePopulacional2;         //variaveis do nivel aventureiros carta 2
+    float PerCapita2;
 
 
 
@@ -47,16 +52,24 @@ int main() {                                 // variaveis para a carta numero 1
         printf("Digite a quantidade de pontos turisticos da cidade\n"); // campo para preencher pontos turisticos da cidade
         scanf("%d",&turisticos);// codigo para registrar o campo preenchido
 
-    printf("carta 1\n");                        // comando para mostrar as informações registradas da carta numero 1
+        
+        DensidadePopulacional = população / area;
+        PerCapita = PIB / população;
+
+
+
+    
+        printf("carta 1\n");                        // comando para mostrar as informações registradas da carta numero 1
     printf("estado: %s\n", estado);
     printf("Código: %s\n", carta);
     printf("Nome da Cidade: %s\n", cidade);
     printf("População: %d\n", população);
     printf("Área: %.2f km²\n", area);
-    printf("PIB: %.2f bilhões de reais\n", PIB);
-    printf("Número de Pontos Turísticos: %d\n", turisticos);
-
+    printf("PIB: %.2f \n", PIB);
+    printf("Número de Pontos Turísticos: %d \n", turisticos);
     
+    printf("densidade populacional:%f hab/km² \n", DensidadePopulacional);
+    printf("PIB per Capita:%f reais \n", PerCapita);
     
         printf("Vamos para o cadastro da segunda carta!\n"); //mensagem de aviso que ira começar o cadastro da segunda carta
 
@@ -84,7 +97,9 @@ int main() {                                 // variaveis para a carta numero 1
         scanf("%d",&turisticos2);// codigo para registrar o campo preenchido
 
 
-    
+        DensidadePopulacional2 = população2 / area2;
+        PerCapita2  = PIB2 / população2;
+
     
     
     
@@ -95,10 +110,11 @@ int main() {                                 // variaveis para a carta numero 1
     printf("Nome da Cidade: %s\n", cidade2);
     printf("População: %d\n", população2);
     printf("Área: %.2f km²\n", area2);
-    printf("PIB: %.2f bilhões de reais\n", PIB2);
+    printf("PIB: %.2f \n", PIB2);
     printf("Número de Pontos Turísticos: %d\n", turisticos2);
 
-
+    printf("densidade populacional:%.2f\n hab/km²", DensidadePopulacional2);   //Exibição nivel aventureiro
+    printf("PIB per Capita:%.2freais \n", PerCapita2);
 
      
 
