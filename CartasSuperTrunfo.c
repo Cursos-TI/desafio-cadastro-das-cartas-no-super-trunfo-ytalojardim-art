@@ -65,7 +65,7 @@ int main() {                                 // variaveis para a carta numero 1
     printf("Nome da Cidade: %s\n", cidade);
     printf("População: %d\n", população);
     printf("Área: %.2f km²\n", area);
-    printf("PIB: %.2f bilhões de reais \n", PIB);
+    printf("PIB: %.2lf bilhões de reais \n", PIB);
     printf("Número de Pontos Turísticos: %d \n", turisticos);
     
     printf("densidade populacional:%.2f hab/km² \n", DensidadePopulacional);
@@ -109,10 +109,10 @@ int main() {                                 // variaveis para a carta numero 1
     printf("Nome da Cidade: %s\n", cidade2);
     printf("População: %d\n", população2);
     printf("Área: %.2f km²\n", area2);
-    printf("PIB: %.2fbilhões de reais \n", PIB2);
+    printf("PIB: %.2lfbilhões de reais \n", PIB2);
     printf("Número de Pontos Turísticos: %d\n", turisticos2);
 
-    printf("densidade populacional:%.2f\n hab/km²", DensidadePopulacional2);   //Exibição densidade populacional
+    printf("densidade populacional: hab/km²%.2f\n", DensidadePopulacional2);   //Exibição densidade populacional
     printf("PIB per Capita:%.2freais \n", PerCapita2);                      // exibição PIB per capita
 
      
