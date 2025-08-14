@@ -46,15 +46,15 @@ int main() {                                 // variaveis para a carta numero 1
         printf("Digite a área da cidade em km²\n");// campo para preencher a area da cidade em km²
         scanf("%f",&area);// codigo para registrar o campo preenchido
 
-        printf("Digite o PIB da cidadeem bilhões de reais\n");// campo para preencher o PIB da cidade
+        printf("Digite o PIB da cidade em bilhões de reais\n");// campo para preencher o PIB da cidade
         scanf("%lf",&PIB);// codigo para registrar o campo preenchido
 
         printf("Digite a quantidade de pontos turisticos da cidade\n"); // campo para preencher pontos turisticos da cidade
         scanf("%d",&turisticos);// codigo para registrar o campo preenchido
 
         
-        DensidadePopulacional = população / area;           // calculo densidade populacional divisão de população pela area da cidade
-        PerCapita = PIB / população;                        // calculo PIB per capita divisão do pib com a população
+        DensidadePopulacional = (float) população / area;           // calculo densidade populacional divisão de população pela area da cidade
+        PerCapita = (float) (PIB * 1000000000.0f) / população;                        // calculo PIB per capita divisão do pib com a população
 
 
 
@@ -97,8 +97,8 @@ int main() {                                 // variaveis para a carta numero 1
         scanf("%d",&turisticos2);// codigo para registrar o campo preenchido
 
 
-        DensidadePopulacional2 = população2 / area2; // calculo densidade populacional divisão de população pela area da cidade
-        PerCapita2  = PIB2 / população2;    // calculo PIB per capita divisão do pib com a população
+        DensidadePopulacional2 = (float)população2 / area2; // calculo densidade populacional divisão de população pela area da cidade
+        PerCapita2  = (float) (PIB2 * 1000000000.0f) / população2;    // calculo PIB per capita divisão do pib com a população
 
     
     
