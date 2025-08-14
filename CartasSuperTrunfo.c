@@ -28,7 +28,7 @@ int main() {                                 // variaveis para a carta numero 1
 
 
 
-        printf("A seguir vamos começar o cadastro de cartas do super trunfo!\n");  // mensagem de anuncio de inicio de cadstro de cartas do super trunfo
+            printf("A seguir vamos começar o cadastro de cartas do super trunfo!\n");  // mensagem de anuncio de inicio de cadstro de cartas do super trunfo
 
 
         printf("Digite o estado\n");// campo para preencher o nome do estado    
@@ -53,8 +53,8 @@ int main() {                                 // variaveis para a carta numero 1
         scanf("%d",&turisticos);// codigo para registrar o campo preenchido
 
         
-        DensidadePopulacional = população / area;
-        PerCapita = PIB / população;
+        DensidadePopulacional = população / area;           // calculo densidade populacional divisão de população pela area da cidade
+        PerCapita = PIB / população;                        // calculo PIB per capita divisão do pib com a população
 
 
 
@@ -65,11 +65,11 @@ int main() {                                 // variaveis para a carta numero 1
     printf("Nome da Cidade: %s\n", cidade);
     printf("População: %d\n", população);
     printf("Área: %.2f km²\n", area);
-    printf("PIB: %.2f \n", PIB);
+    printf("PIB: %.2f bilhões de reais \n", PIB);
     printf("Número de Pontos Turísticos: %d \n", turisticos);
     
-    printf("densidade populacional:%f hab/km² \n", DensidadePopulacional);
-    printf("PIB per Capita:%f reais \n", PerCapita);
+    printf("densidade populacional:%.2f hab/km² \n", DensidadePopulacional);
+    printf("PIB per Capita:%.2f reais \n", PerCapita);
     
         printf("Vamos para o cadastro da segunda carta!\n"); //mensagem de aviso que ira começar o cadastro da segunda carta
 
@@ -97,24 +97,24 @@ int main() {                                 // variaveis para a carta numero 1
         scanf("%d",&turisticos2);// codigo para registrar o campo preenchido
 
 
-        DensidadePopulacional2 = população2 / area2;
-        PerCapita2  = PIB2 / população2;
+        DensidadePopulacional2 = população2 / area2; // calculo densidade populacional divisão de população pela area da cidade
+        PerCapita2  = PIB2 / população2;    // calculo PIB per capita divisão do pib com a população
 
     
     
     
-    printf("carta 2\n");                         // comando para mostrar as informações registradas da carta numero 2
+        printf("carta 2\n");                         // comando para mostrar as informações registradas da carta numero 2
     printf("estado: %s\n", estado);
     printf("estado: %s\n", estado2);
     printf("Código: %s\n", carta2);
     printf("Nome da Cidade: %s\n", cidade2);
     printf("População: %d\n", população2);
     printf("Área: %.2f km²\n", area2);
-    printf("PIB: %.2f \n", PIB2);
+    printf("PIB: %.2fbilhões de reais \n", PIB2);
     printf("Número de Pontos Turísticos: %d\n", turisticos2);
 
-    printf("densidade populacional:%.2f\n hab/km²", DensidadePopulacional2);   //Exibição nivel aventureiro
-    printf("PIB per Capita:%.2freais \n", PerCapita2);
+    printf("densidade populacional:%.2f\n hab/km²", DensidadePopulacional2);   //Exibição densidade populacional
+    printf("PIB per Capita:%.2freais \n", PerCapita2);                      // exibição PIB per capita
 
      
 
