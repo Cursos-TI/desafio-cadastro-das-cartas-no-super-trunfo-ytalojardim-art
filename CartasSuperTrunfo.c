@@ -31,6 +31,7 @@ int main() {                                 // variaveis para a carta numero 1
     float Super_poder2;
     float inverso_densidade_populacional2;
 
+    char aaa;
             printf("A seguir vamos começar o cadastro de cartas do super trunfo!\n");  // mensagem de anuncio de inicio de cadstro de cartas do super trunfo
 
 
@@ -146,7 +147,7 @@ int main() {                                 // variaveis para a carta numero 1
         printf("Super Poder:(%d)\n", resultado_superpoder);
              
             
-            
+        
 
 
 
