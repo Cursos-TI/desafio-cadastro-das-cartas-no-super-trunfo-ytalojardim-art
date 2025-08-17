@@ -31,37 +31,37 @@ int main() {                                 // variaveis para a carta numero 1
     float Super_poder2;
     float inverso_densidade_populacional2;
 
-    char aaa;
-            printf("A seguir vamos começar o cadastro de cartas do super trunfo!\n");  // mensagem de anuncio de inicio de cadstro de cartas do super trunfo
-
-
-        printf("Digite o estado\n");// campo para preencher o nome do estado    
-        scanf("%s",estado);  // codigo para registrar o campo preenchido
     
-        printf("Digite o código da carta\n"); // campo para preencher o codigo da carta
-        scanf("%s",carta);// codigo para registrar o campo preenchido
+                        printf("A seguir vamos começar o cadastro de cartas do super trunfo!\n");  // mensagem de anuncio de inicio de cadstro de cartas do super trunfo
 
-        printf("Digite o nome da cidade\n");// campo para preencher o nome da cidade
-        scanf("%s",cidade);// codigo para registrar o campo preenchido
 
-        printf("Digite a população da cidade\n");   // campo para preencher a população da cidade
-        scanf("%lu",&população);// codigo para registrar o campo preenchido
+                        printf("Digite o estado\n");// campo para preencher o nome do estado    
+                        scanf("%s",estado);  // codigo para registrar o campo preenchido
+                    
+                        printf("Digite o código da carta\n"); // campo para preencher o codigo da carta
+                        scanf("%s",carta);// codigo para registrar o campo preenchido
 
-        printf("Digite a área da cidade em km²\n");// campo para preencher a area da cidade em km²
-        scanf("%f",&area);// codigo para registrar o campo preenchido
+                        printf("Digite o nome da cidade\n");// campo para preencher o nome da cidade
+                        scanf("%s",cidade);// codigo para registrar o campo preenchido
 
-        printf("Digite o PIB da cidade em bilhões de reais\n");// campo para preencher o PIB da cidade
-        scanf("%lf",&PIB);// codigo para registrar o campo preenchido
+                        printf("Digite a população da cidade\n");   // campo para preencher a população da cidade
+                        scanf("%lu",&população);// codigo para registrar o campo preenchido
 
-        printf("Digite a quantidade de pontos turisticos da cidade\n"); // campo para preencher pontos turisticos da cidade
-        scanf("%d",&turisticos);// codigo para registrar o campo preenchido
+                        printf("Digite a área da cidade em km²\n");// campo para preencher a area da cidade em km²
+                        scanf("%f",&area);// codigo para registrar o campo preenchido
 
-        
-        DensidadePopulacional = (float) população / area;           // calculo densidade populacional divisão de população pela area da cidade
-        PerCapita = (float) (PIB * 1000000000.0f) / população;                        // calculo PIB per capita divisão do pib com a população
+                        printf("Digite o PIB da cidade em bilhões de reais\n");// campo para preencher o PIB da cidade
+                        scanf("%lf",&PIB);// codigo para registrar o campo preenchido
 
-        Super_poder = (float) população + area + PIB + turisticos + PerCapita + inverso_densidade_populacional;
-        inverso_densidade_populacional = area / população;
+                        printf("Digite a quantidade de pontos turisticos da cidade\n"); // campo para preencher pontos turisticos da cidade
+                        scanf("%d",&turisticos);// codigo para registrar o campo preenchido
+
+            
+                                            DensidadePopulacional = (float) população / area;           // calculo densidade populacional divisão de população pela area da cidade
+                                            PerCapita = (float) (PIB * 1000000000.0f) / população;                        // calculo PIB per capita divisão do pib com a população
+
+                                            Super_poder = (float) população + area + PIB + turisticos + PerCapita + inverso_densidade_populacional;
+                                            inverso_densidade_populacional = area / população;
     
         printf("carta 1\n");                        // comando para mostrar as informações registradas da carta numero 1
     printf("estado: %s\n", estado);
@@ -78,39 +78,39 @@ int main() {                                 // variaveis para a carta numero 1
     printf("Super poder: %.2f\n", Super_poder );
         
     
-    
-        printf("Vamos para o cadastro da segunda carta!\n"); //mensagem de aviso que ira começar o cadastro da segunda carta
+                        
+                            printf("Vamos para o cadastro da segunda carta!\n"); //mensagem de aviso que ira começar o cadastro da segunda carta
 
 
-   
-        printf("Digite o estado\n");
-        scanf("%s",estado2);// codigo para registrar o campo preenchido
-    
-        printf("Digite o código da carta\n");
-        scanf("%s",carta2);// codigo para registrar o campo preenchido
+                    
+                            printf("Digite o estado\n");
+                            scanf("%s",estado2);// codigo para registrar o campo preenchido
+                        
+                            printf("Digite o código da carta\n");
+                            scanf("%s",carta2);// codigo para registrar o campo preenchido
 
-        printf("Digite o nome da cidade\n");
-        scanf("%s",cidade2);// codigo para registrar o campo preenchido
+                            printf("Digite o nome da cidade\n");
+                            scanf("%s",cidade2);// codigo para registrar o campo preenchido
 
-        printf("Digite a população da cidade\n");   
-        scanf("%d",&população2);// codigo para registrar o campo preenchido
+                            printf("Digite a população da cidade\n");   
+                            scanf("%d",&população2);// codigo para registrar o campo preenchido
 
-        printf("Digite a área da cidade em km²\n");
-        scanf("%f",&area2);// codigo para registrar o campo preenchido
+                            printf("Digite a área da cidade em km²\n");
+                            scanf("%f",&area2);// codigo para registrar o campo preenchido
 
-        printf("Digite o PIB da cidade em bilhões de reais\n");
-        scanf("%lf",&PIB2);// codigo para registrar o campo preenchido
+                            printf("Digite o PIB da cidade em bilhões de reais\n");
+                            scanf("%lf",&PIB2);// codigo para registrar o campo preenchido
 
-        printf("Digite a quantidade de pontos turisticos da cidade\n");
-        scanf("%d",&turisticos2);// codigo para registrar o campo preenchido
+                            printf("Digite a quantidade de pontos turisticos da cidade\n");
+                            scanf("%d",&turisticos2);// codigo para registrar o campo preenchido
 
 
-        DensidadePopulacional2 = (float)população2 / area2; // calculo densidade populacional divisão de população pela area da cidade
-        PerCapita2  = (float) (PIB2 * 1000000000.0f) / população2;    // calculo PIB per capita divisão do pib com a população
+                                            DensidadePopulacional2 = (float)população2 / area2; // calculo densidade populacional divisão de população pela area da cidade
+                                            PerCapita2  = (float) (PIB2 * 1000000000.0f) / população2;    // calculo PIB per capita divisão do pib com a população
 
-        Super_poder2 = (float) população2 + area2 + PIB2 + turisticos2 + PerCapita2 + inverso_densidade_populacional2;
-        inverso_densidade_populacional = area2 / população2;
-    
+                                            Super_poder2 = (float) população2 + area2 + PIB2 + turisticos2 + PerCapita2 + inverso_densidade_populacional2;
+                                            inverso_densidade_populacional = area2 / população2;
+                                        
     
     
         printf("carta 2\n");                         // comando para mostrar as informações registradas da carta numero 2
@@ -127,15 +127,15 @@ int main() {                                 // variaveis para a carta numero 1
 
     printf("Super poder: %.2f\n", Super_poder );
      
-    int resultado_população , resultado_area,  resultado_PIB,  resultado_pontos_turisticos,  resultado_densidade_populacional,  resultado_PIB_per_capita, resultado_superpoder;
+                    int resultado_população , resultado_area,  resultado_PIB,  resultado_pontos_turisticos,  resultado_densidade_populacional,  resultado_PIB_per_capita, resultado_superpoder;
 
-    resultado_população = população>população2;
-    resultado_area = area>area2;
-    resultado_PIB = PIB>PIB2;
-    resultado_pontos_turisticos = turisticos>turisticos2;
-    resultado_densidade_populacional =  inverso_densidade_populacional< inverso_densidade_populacional;
-    resultado_PIB_per_capita = PerCapita>PerCapita2;
-    resultado_superpoder = Super_poder>Super_poder2;
+                    resultado_população = população>população2;
+                    resultado_area = area>area2;
+                    resultado_PIB = PIB>PIB2;
+                    resultado_pontos_turisticos = turisticos>turisticos2;
+                    resultado_densidade_populacional =  inverso_densidade_populacional< inverso_densidade_populacional;
+                    resultado_PIB_per_capita = PerCapita>PerCapita2;
+                    resultado_superpoder = Super_poder>Super_poder2;
 
         printf("compração de cartas:\n" );
         printf("população:(%d)\n",resultado_população);
