@@ -37,22 +37,22 @@ int main() {                                 // variaveis para a carta numero 1
 
                         printf("Digite o estado\n");// campo para preencher o nome do estado    
                         scanf("%s",estado);  // codigo para registrar o campo preenchido
-                    
+                        system("cls");   // após pesquisar usei esse codigo para limpar o terminal para nao conter muita informaçao desnecessaria  
                         printf("Digite o código da carta\n"); // campo para preencher o codigo da carta
                         scanf("%s",carta);// codigo para registrar o campo preenchido
-
+                        system("cls");
                         printf("Digite o nome da cidade\n");// campo para preencher o nome da cidade
                         scanf("%s",cidade);// codigo para registrar o campo preenchido
-
+                        system("cls");
                         printf("Digite a população da cidade\n");   // campo para preencher a população da cidade
                         scanf("%lu",&população);// codigo para registrar o campo preenchido
-
+                        system("cls");
                         printf("Digite a área da cidade em km²\n");// campo para preencher a area da cidade em km²
                         scanf("%f",&area);// codigo para registrar o campo preenchido
-
+                        system("cls");
                         printf("Digite o PIB da cidade em bilhões de reais\n");// campo para preencher o PIB da cidade
                         scanf("%lf",&PIB);// codigo para registrar o campo preenchido
-
+                        system("cls");
                         printf("Digite a quantidade de pontos turisticos da cidade\n"); // campo para preencher pontos turisticos da cidade
                         scanf("%d",&turisticos);// codigo para registrar o campo preenchido
 
@@ -85,25 +85,25 @@ int main() {                                 // variaveis para a carta numero 1
                     
                             printf("Digite o estado\n");
                             scanf("%s",estado2);// codigo para registrar o campo preenchido
-                        
+                            system("cls");       // após pesquisar usei esse codigo para limpar o terminal para nao conter muita informaçao desnecessaria
                             printf("Digite o código da carta\n");
                             scanf("%s",carta2);// codigo para registrar o campo preenchido
-
+                            system("cls");
                             printf("Digite o nome da cidade\n");
                             scanf("%s",cidade2);// codigo para registrar o campo preenchido
-
+                            system("cls");
                             printf("Digite a população da cidade\n");   
                             scanf("%d",&população2);// codigo para registrar o campo preenchido
-
+                            system("cls");
                             printf("Digite a área da cidade em km²\n");
                             scanf("%f",&area2);// codigo para registrar o campo preenchido
-
+                            system("cls");
                             printf("Digite o PIB da cidade em bilhões de reais\n");
                             scanf("%lf",&PIB2);// codigo para registrar o campo preenchido
-
+                            system("cls");
                             printf("Digite a quantidade de pontos turisticos da cidade\n");
                             scanf("%d",&turisticos2);// codigo para registrar o campo preenchido
-
+                            system("cls");
 
                                             DensidadePopulacional2 = (float)população2 / area2; // calculo densidade populacional divisão de população pela area da cidade
                                             PerCapita2  = (float) (PIB2 * 1000000000.0f) / população2;    // calculo PIB per capita divisão do pib com a população
@@ -146,7 +146,101 @@ int main() {                                 // variaveis para a carta numero 1
         printf("PIB per capita:(%d)\n", resultado_PIB_per_capita);
         printf("Super Poder:(%d)\n", resultado_superpoder);
              
-            
+           
+        
+
+                                        // Implemantação de lógica Super Trunfo nivel novato
+
+
+                                      printf("comparação de cartas \n\n");
+
+                                      printf("carta 1 %s  (%s): população %lu \n", cidade , estado , populacao);          //Exibição de atributos comparados
+                                      printf("carta 2 %s  (%s):população %lu \n", cidade2 , estado2, populacao2);
+
+                                        if(populacao > populacao2){
+                                            printf("carta 1 venceu, %s \n\n", cidade);       // resultado das comparações verdadeiro
+                                                                                             
+                                        }else {
+                                            printf("carta 2 venceu, %s \n\n", cidade2);       // resultado das comparações falso
+                                        }
+
+
+
+
+                                        printf("carta 1 %s  (%s):area %.2f \n", cidade , estado, area);          //Exibição de atributos comparados
+                                        printf("carta 2 %s  (%s):area %.2f \n", cidade2 , estado2, area2);
+
+
+                                         if(area > area2){
+                                            printf("carta 1 venceu, %s \n\n", cidade);       // resultado das comparações verdadeiro
+
+                                        }else {
+                                            printf("carta 2 venceu, %s \n\n", cidade2);       // resultado das comparações falso
+                                        }
+
+
+
+
+
+                                        printf("carta 1 %s  (%s): PIB %.2lf bilhões de reais \n", cidade , estado, PIB);          //Exibição de atributos comparados
+                                        printf("carta 2 %s  (%s): PIB %.2lf bilhões de reais \n", cidade2 , estado2, PIB2);
+
+
+                                         if(PIB > PIB2){
+                                            printf("carta 1 venceu, %s \n\n", cidade);       // resultado das comparações verdadeiro
+
+                                        }else {
+                                            printf("carta 2 venceu, %s \n\n", cidade2);       // resultado das comparações falso
+                                        }
+
+
+
+                                        printf("carta 1 %s  (%s): %d \n", cidade , estado, turisticos);          //Exibição de atributos comparados
+                                        printf("carta 2 %s  (%s): %d \n", cidade2 , estado2, turisticos2);
+
+
+                                         if(turisticos < turisticos2){
+                                            printf("carta 1 venceu, %s \n\n", cidade);       // resultado das comparações verdadeiro
+
+                                        }else {
+                                            printf("carta 2 venceu, %s \n\n", cidade2);       // resultado das comparações falso
+                                        }
+
+
+                                         printf("carta 1 %s  (%s): %.2f \n", cidade , estado, DensidadePopulacional);          //Exibição de atributos comparados
+                                         printf("carta 2 %s  (%s): %.2f \n", cidade2 , estado2, DensidadePopulacional2);
+
+
+                                         if(DensidadePopulacional < DensidadePopulacional2){
+                                            printf("carta 1 venceu, %s \n\n",cidade);       // resultado das comparações verdadeiro
+
+                                        }else {
+                                            printf("carta 2 venceu, %s \n\n",cidade2);       // resultado das comparações falso
+                                        }
+
+
+                                         printf("carta 1 %s  (%s): %.2f reais\n", cidade , estado, PerCapita);          //Exibição de atributos comparados
+                                         printf("carta 2 %s  (%s): %.2f reais\n", cidade2 , estado2, PerCapita2);
+
+
+                                         if(PerCapita > PerCapita2){
+                                            printf("carta 1 venceu, %s \n\n",cidade);       // resultado das comparações verdadeiro
+
+                                        }else {
+                                            printf("carta 2 venceu, %s \n\n", cidade2);       // resultado das comparações falso
+                                        }
+
+
+                                         printf("carta 1 %s  (%s): %.2f \n", cidade , estado, Super_poder);          //Exibição de atributos comparados
+                                         printf("carta 2 %s  (%s): %.2f \n", cidade2 , estado2, Super_poder2);
+
+
+                                         if(Super_poder > Super_poder2){
+                                            printf("carta 1 venceu, %s \n\n", cidade);       // resultado das comparações verdadeiro
+
+                                        }else {
+                                            printf("carta 2 venceu, %s \n\n", cidade2);       // resultado das comparações falso
+                                        }
         
 
 
