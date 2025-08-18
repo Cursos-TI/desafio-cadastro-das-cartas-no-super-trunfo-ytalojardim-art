@@ -154,10 +154,10 @@ int main() {                                 // variaveis para a carta numero 1
 
                                       printf("comparação de cartas \n\n");
 
-                                      printf("carta 1 %s  (%s): população %lu \n", cidade , estado , populacao);          //Exibição de atributos comparados
-                                      printf("carta 2 %s  (%s):população %lu \n", cidade2 , estado2, populacao2);
+                                      printf("carta 1 %s  (%s): população %lu \n", cidade , estado , população);          //Exibição de atributos comparados
+                                      printf("carta 2 %s  (%s):população %lu \n", cidade2 , estado2, população2);
 
-                                        if(populacao > populacao2){
+                                        if(população > população2){
                                             printf("carta 1 venceu, %s \n\n", cidade);       // resultado das comparações verdadeiro
                                                                                              
                                         }else {
